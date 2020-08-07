@@ -70,7 +70,7 @@ int main()
 
     // Parent
     write(fd[FROM_PARENT][INPUT], SAMPLE_INPUT, sizeof(SAMPLE_INPUT));
-    std::cout << "Waiting for child to terminate...\n";
+    std::cout << "Waiting for the child to terminate...\n";
     sc::time_point start = sc::now();
     timespec timeout;
     timeout.tv_sec = TIMEOUT;
